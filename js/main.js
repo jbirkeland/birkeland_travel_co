@@ -12,7 +12,8 @@ var vm = new Vue ({
                 accommodationType: "4 nights in hotels, 4 nights camping",
                 airfareIncl: "No",
                 activityLevel: "Moderate, some hiking involved",
-                weather: "Rainy"
+                weather: "Partly Cloudy, Rainy",
+                avgTemp: "45 to 55 degrees Fahrenheit"
             },
             {
                 placeName: "San Diego, California",
@@ -24,19 +25,21 @@ var vm = new Vue ({
                 accommodationType: "3 nights in hotels",
                 airfareIncl: "Yes",
                 activityLevel: "Moderate, several long walks per day",
-                weather: "Sunny"
+                weather: "Sunny",
+                avgTemp: "65 to 75 degrees Fahrenheit"
             },
             {
                 placeName: "Tofte, Minnesota",
                 tripDescription: "Nothing but Nature on the North Shore",
                 tripDuration: "5 days",
-                tripMonth: "June and July",
-                tripCost: "$300",
+                tripMonth: "December and January",
+                tripCost: "$500",
                 lodgingAndFoodIncl: "Yes",
-                accommodationType: "4 nights camping",
+                accommodationType: "4 nights hotel",
                 airfareIncl: "No",
                 activityLevel: "Difficult, several long hikes per day",
-                weather: "Partly Sunny, Occasional Rain"
+                weather: "Partly Cloudy, Snowy",
+                avgTemp: "-15 to 15 degrees Fahrenheit"
             },
             {
                 placeName: "Mykonos, Greece",
@@ -48,7 +51,8 @@ var vm = new Vue ({
                 accommodationType: "8 nights in hotels",
                 airfareIncl: "No",
                 activityLevel: "Easy, beaches and great food",
-                weather: "Partly Sunny, Windy"
+                weather: "Partly Sunny, Windy",
+                avgTemp: "70 to 80 degrees Fahrenheit"
             },
 
         ]
