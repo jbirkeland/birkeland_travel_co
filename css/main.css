@@ -110,7 +110,9 @@ html {
     box-sizing: inherit;
 }
 
-
+[v-cloak] {
+    display: none;
+}
 
 
 
