@@ -1,5 +1,24 @@
-var vm = new Vue ({
-    el: "#places",
+Vue.component('places-component', {
+    props: ['placeName', 'tripDescription','tripDuration','tripMonth','tripCost','lodgingAndFoodIncl','accommodationType','airfareIncl','activityLevel','weather','avgTemp'],
+    template: `
+    <div class="places-container">
+      <h3>{{placeName}}</h3>
+      <p>{{tripDescription}}</p>
+      <ul>
+        <li>{{tripDuration}}</li>
+        <li>{{tripMonth}}</li>
+        <li>{{tripCost}}</li>
+        <li>{{lodgingAndFoodIncl}}</li>
+        <li>{{accommodationType}}</li>
+        <li>{{airfareIncl}}</li>
+        <li>{{activityLevel}}</li>
+        <li>{{weather}}</li>
+        <li>{{avgTemp}}</li>
+      </ul>`
+});
+
+var vm = new Vue({
+    el: "#app",
     data: {
         places: [
             {
@@ -57,4 +76,4 @@ var vm = new Vue ({
 
         ]
     }
-})
+});

@@ -35,13 +35,31 @@
 
   <h1>Birkeland Travel Company</h1>
   <p>Home</p>
+  <h2>Destinations</h2>
+  
+  <div id="app">
+    <places-component
+      v-for="items in places"
+      :place-name="items.placeName"
+      :trip-description="items.tripDescription"
+      :trip-duration="items.tripDuration"
+      :trip-month="items.tripMonth"
+      :trip-cost="items.tripCost"
+      :lodging-and-food-incl="items.lodgingAndFoodIncl"
+      :accommodation-type="items.accommodationType"
+      :airfare-incl="items.airfareIncl"
+      :activity-level="items.activityLevel"
+      :weather="items.weather"
+      :avg-temp="items.avgTemp">
+    </places-component>
+  </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
