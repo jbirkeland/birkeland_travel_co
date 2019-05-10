@@ -22,6 +22,11 @@
 var vm = new Vue({
     el: "#app",
     data: {
+        selectedMonth: "",
+        weather:"",
+        camping:"",
+        tripLevel:"",
+        leavingUSA:"",
         places: [
             {
                 index: 1,
@@ -79,7 +84,6 @@ var vm = new Vue({
                 weather: "Partly Sunny, Windy",
                 avgTemp: "70 to 80 degrees Fahrenheit"
             },
-
         ]
     }
 });

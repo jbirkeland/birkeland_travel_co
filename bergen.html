@@ -64,52 +64,59 @@
         <li>{{places[0].avgTemp}}</li>
       </ul>
     </div>
-  </div>
-    
-  <div>
-    <fieldset>
-      <legend>Wondering How to Pack for this Adventure?</legend>
-        <div class="checkbox-form-group">
-          <p>Have you been on an active trip before&#63;</p>
-          <label>Yes<input type="radio" name="active" checked v-model="activeTrip"></label>
-          <label>No<input type="radio" name="active" v-model="activeTrip"></label>
-        </div>
 
-        <div class="checkbox-form-group">
-          <p>What month(s) will this trip be running&#63;</p>
-          <label>September and October<input type="radio" name="selectedMonth" v-model="selectedMonth"></label>
-          <label>December and January<input type="radio" name="selectedMonth" v-model="selectedMonth"></label>
-          <label>March and April<input type="radio" name="selectedMonth" v-model="selectedMonth"></label>
-          <label>August and September<input type="radio" name="selectedMonth" v-model="selectedMonth"></label>
-        </div>
+    <div class="packing-form">
+      <fieldset>
+        <legend>Wondering How to Pack for this Adventure?</legend>
+          <div class="checkbox-form-group">
+            <p>What month(s) will this trip be running&#63;</p>
+            <label>September and October<input type="radio" value="September and October" v-model="selectedMonth"></label>
+            <label>December and January<input type="radio" value="December and January" v-model="selectedMonth"></label>
+            <label>March and April<input type="radio" value="March and April" v-model="selectedMonth"></label>
+            <label>August and September<input type="radio" value="August and September" v-model="selectedMonth"></label>
+          </div>
 
-        <div class="checkbox-form-group">
-          <p>What is the average temperature for this location when you will be there&#63;</p>
-          <label>-15 to 15 &deg;F<input type="radio" name="avgTemp" v-model="avgTemp"></label>
-          <label>45 to 55 &deg;F<input type="radio" name="avgTemp" v-model="avgTemp"></label>
-          <label>65 to 75 &deg;F<input type="radio" name="avgTemp" v-model="avgTemp"></label>
-          <label>70 to 80 &deg;F<input type="radio" name="avgTemp" v-model="avgTemp"></label>
-        </div>
+          <div class="checkbox-form-group">
+            <p>What is the average temperature for this location when you will be there&#63;</p>
+            <label>-15 to 15 &deg;F<input type="radio" value="-15 to 15" v-model="weather"></label>
+            <label>45 to 55 &deg;F<input type="radio" value="45 to 55" v-model="weather"></label>
+            <label>65 to 75 &deg;F<input type="radio" value="65 to 75" v-model="weather"></label>
+            <label>70 to 80 &deg;F<input type="radio" value="70 to 80" v-model="weather"></label>
+          </div>
 
-        <div class="checkbox-form-group">
-          <p>Will you be camping on this trip&#63;</p>
-          <label>Yes<input type="radio" name="camping" checked v-model="camping"></label>
-          <label>No<input type="radio" name="camping" v-model="camping"></label>
-        </div>
+          <div class="checkbox-form-group">
+            <p>Will you be camping on this trip&#63;</p>
+            <label>Yes<input type="radio" value="Yes" v-model="camping"></label>
+            <label>No<input type="radio" value="No" v-model="camping"></label>
+          </div>
 
-        <div class="checkbox-form-group">
-          <p>What is the activity level for this trip&#63;</p>
-          <label>Easy<input type="radio" name="activityLevel" v-model="activityLevel"></label>
-          <label>Moderate<input type="radio" name="activityLevel" v-model="activityLevel"></label>
-          <label>Difficult<input type="radio" name="activityLevel" v-model="activityLevel"></label>
-        </div>
+          <div class="checkbox-form-group">
+            <p>What is the activity level for this trip&#63;</p>
+            <label>Easy<input type="radio" value="Easy" v-model="tripLevel"></label>
+            <label>Moderate<input type="radio" value="Moderate" v-model="tripLevel"></label>
+            <label>Difficult<input type="radio" value="Difficult" v-model="tripLevel"></label>
+          </div>
 
-        <div class="checkbox-form-group">
-          <p>Will you be leaving the United States for this trip&#63;</p>
-          <label>Yes<input type="radio" name="leavingUSA" checked v-model="leavingUSA"></label>
-          <label>No<input type="radio" name="leavingUSA" v-model="leavingUSA"></label>
-        </div>
-    </fieldset>
+          <div class="checkbox-form-group">
+            <p>Will you be leaving the United States for this trip&#63;</p>
+            <label>Yes<input type="radio" value="Yes" v-model="leavingUSA"></label>
+            <label>No<input type="radio" value="No" v-model="leavingUSA"></label>
+          </div>
+      </fieldset>
+    </div>
+    <div class="packing-form-output">
+      <h3>Here are my packing recommendations to get you started:</h3>
+
+      <p><strong>What month(s) will this trip be running&#63;</strong> {{selectedMonth}}</p>
+
+      <p><strong>What is the average temperature for this location when you will be there&#63;</strong> {{weather}}</p>
+
+      <p><strong>Will you be camping on this trip&#63;</strong> {{camping}}</p>
+
+      <p><strong>What is the activity level for this trip&#63;</strong> {{tripLevel}}</p>
+      
+      <p><strong>Will you be leaving the United States for this trip&#63;</strong> {{leavingUSA}}</p>
+    </div>
   </div>
 
   <footer>

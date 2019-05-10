@@ -126,12 +126,19 @@ img {
     border: 2px solid #bbb;
 }
 
+li {
+    list-style-type: none;
+}
+
 .destinations-container {
     border: 1px solid black;
     display: flex;
     justify-content: space-between;
 }
 
+.packing-form {
+    border: 1px solid black;
+}
 
 
 
