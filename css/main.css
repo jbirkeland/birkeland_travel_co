@@ -114,6 +114,24 @@ html {
     display: none;
 }
 
+body {
+    margin: auto;
+    text-align: center;
+    width: 1200px;
+}
+
+img {
+    width: 98%;
+    border-radius: 15px;
+    border: 2px solid #bbb;
+}
+
+.destinations-container {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 

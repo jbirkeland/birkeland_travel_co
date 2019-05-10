@@ -24,6 +24,7 @@ var vm = new Vue({
     data: {
         places: [
             {
+                index: 1,
                 placeName: "Bergen, Norway",
                 tripDescription: "History and Hiking in the Homeland",
                 tripDuration: "10 days",
@@ -37,6 +38,7 @@ var vm = new Vue({
                 avgTemp: "45 to 55 degrees Fahrenheit"
             },
             {
+                index: 2,
                 placeName: "San Diego, California",
                 tripDescription: "A Sunny Start to Spring in Southern California",
                 tripDuration: "4 days",
@@ -50,6 +52,7 @@ var vm = new Vue({
                 avgTemp: "65 to 75 degrees Fahrenheit"
             },
             {
+                index: 3,
                 placeName: "Tofte, Minnesota",
                 tripDescription: "Nothing but Nature on the North Shore",
                 tripDuration: "5 days",
@@ -63,6 +66,7 @@ var vm = new Vue({
                 avgTemp: "-15 to 15 degrees Fahrenheit"
             },
             {
+                index: 4,
                 placeName: "Mykonos, Greece",
                 tripDescription: "Relaxing in the Magnificent Mediterranean",
                 tripDuration: "10 days",
