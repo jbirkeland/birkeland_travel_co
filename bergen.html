@@ -47,26 +47,70 @@
     </div>
   </header>
 
-  <section>
-    <h2>Destinations</h2>
-    <div id="app" v-cloak>
-      <div class="places-container">
-        <h3>{{places[0].placeName}}</h3>
-        <p>{{places[0].tripDescription}}</p>
-        <ul>
-          <li>{{places[0].tripDuration}}</li>
-          <li>{{places[0].tripMonth}}</li>
-          <li>{{places[0].tripCost}}</li>
-          <li>{{places[0].lodgingAndFoodIncl}}</li>
-          <li>{{places[0].accommodationType}}</li>
-          <li>{{places[0].airfareIncl}}</li>
-          <li>{{places[0].activityLevel}}</li>
-          <li>{{places[0].weather}}</li>
-          <li>{{places[0].avgTemp}}</li>
-        </ul>
-      </div>
+
+  <div id="app" v-cloak>
+    <div class="places-container">
+      <h3>{{places[0].placeName}}</h3>
+      <p>{{places[0].tripDescription}}</p>
+      <ul>
+        <li>{{places[0].tripDuration}}</li>
+        <li>{{places[0].tripMonth}}</li>
+        <li>{{places[0].tripCost}}</li>
+        <li>{{places[0].lodgingAndFoodIncl}}</li>
+        <li>{{places[0].accommodationType}}</li>
+        <li>{{places[0].airfareIncl}}</li>
+        <li>{{places[0].activityLevel}}</li>
+        <li>{{places[0].weather}}</li>
+        <li>{{places[0].avgTemp}}</li>
+      </ul>
     </div>
-  </section>
+  </div>
+    
+  <div>
+    <fieldset>
+      <legend>Wondering How to Pack for this Adventure?</legend>
+        <div class="checkbox-form-group">
+          <p>Have you been on an active trip before&#63;</p>
+          <label>Yes<input type="radio" name="active" checked v-model="activeTrip"></label>
+          <label>No<input type="radio" name="active" v-model="activeTrip"></label>
+        </div>
+
+        <div class="checkbox-form-group">
+          <p>What month(s) will this trip be running&#63;</p>
+          <label>September and October<input type="radio" name="selectedMonth" v-model="selectedMonth"></label>
+          <label>December and January<input type="radio" name="selectedMonth" v-model="selectedMonth"></label>
+          <label>March and April<input type="radio" name="selectedMonth" v-model="selectedMonth"></label>
+          <label>August and September<input type="radio" name="selectedMonth" v-model="selectedMonth"></label>
+        </div>
+
+        <div class="checkbox-form-group">
+          <p>What is the average temperature for this location when you will be there&#63;</p>
+          <label>-15 to 15 &deg;F<input type="radio" name="avgTemp" v-model="avgTemp"></label>
+          <label>45 to 55 &deg;F<input type="radio" name="avgTemp" v-model="avgTemp"></label>
+          <label>65 to 75 &deg;F<input type="radio" name="avgTemp" v-model="avgTemp"></label>
+          <label>70 to 80 &deg;F<input type="radio" name="avgTemp" v-model="avgTemp"></label>
+        </div>
+
+        <div class="checkbox-form-group">
+          <p>Will you be camping on this trip&#63;</p>
+          <label>Yes<input type="radio" name="camping" checked v-model="camping"></label>
+          <label>No<input type="radio" name="camping" v-model="camping"></label>
+        </div>
+
+        <div class="checkbox-form-group">
+          <p>What is the activity level for this trip&#63;</p>
+          <label>Easy<input type="radio" name="activityLevel" v-model="activityLevel"></label>
+          <label>Moderate<input type="radio" name="activityLevel" v-model="activityLevel"></label>
+          <label>Difficult<input type="radio" name="activityLevel" v-model="activityLevel"></label>
+        </div>
+
+        <div class="checkbox-form-group">
+          <p>Will you be leaving the United States for this trip&#63;</p>
+          <label>Yes<input type="radio" name="leavingUSA" checked v-model="leavingUSA"></label>
+          <label>No<input type="radio" name="leavingUSA" v-model="leavingUSA"></label>
+        </div>
+    </fieldset>
+  </div>
 
   <footer>
     <p>Social Media</p>
