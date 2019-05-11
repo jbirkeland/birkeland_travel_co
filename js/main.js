@@ -22,11 +22,6 @@
 var vm = new Vue({
     el: "#app",
     data: {
-        selectedMonth: "",
-        weather:"",
-        camping:"",
-        tripLevel:"",
-        leavingUSA:"",
         places: [
             {
                 index: 1,
@@ -38,9 +33,13 @@ var vm = new Vue({
                 lodgingAndFoodIncl: "Yes",
                 accommodationType: "4 nights in hotels, 4 nights camping",
                 airfareIncl: "No",
-                activityLevel: "Moderate, some hiking involved",
-                weather: "Partly Cloudy, Rainy",
-                avgTemp: "45 to 55 degrees Fahrenheit"
+                activityLevel: "moderate, some hiking involved",
+                footwear: "adequate shoes with good support",
+                clothing: "rain gear, warm clothes, wool socks, quick-dry clothing",
+                weather: "partly cloudy and rainy",
+                avgTemp: "45 to 55 degrees Fahrenheit",
+                leavingUSA: "outside of the USA",
+                additionalItems: "A passport will be required, and you will need medical documents, insurance cards and a copy of banking documents"
             },
             {
                 index: 2,
@@ -52,9 +51,13 @@ var vm = new Vue({
                 lodgingAndFoodIncl: "Yes",
                 accommodationType: "3 nights in hotels",
                 airfareIncl: "Yes",
-                activityLevel: "Moderate, several long walks per day",
-                weather: "Sunny",
-                avgTemp: "65 to 75 degrees Fahrenheit"
+                activityLevel: "moderate, several long walks per day",
+                footwear: "adequate shoes with good support and sandals",
+                clothing: "lightweight clothing, light jacket and shorts",
+                weather: "sunny",
+                avgTemp: "65 to 75 degrees Fahrenheit",
+                leavingUSA: "within the USA",
+                additionalItems: "There shouldn't need additional items"
             },
             {
                 index: 3,
@@ -66,9 +69,13 @@ var vm = new Vue({
                 lodgingAndFoodIncl: "Yes",
                 accommodationType: "4 nights hotel",
                 airfareIncl: "No",
-                activityLevel: "Difficult, several long hikes per day",
-                weather: "Partly Cloudy, Snowy",
-                avgTemp: "-15 to 15 degrees Fahrenheit"
+                activityLevel: "difficult, several long hikes per day",
+                footwear: "winter boots required",
+                clothing: "very warm clothing, thermal base layers, wool socks, hat and gloves",
+                weather: "partly cloudy and snowy",
+                avgTemp: "-15 to 15 degrees Fahrenheit",
+                leavingUSA: "within the USA",
+                additionalItems: "There shouldn't need additional items"
             },
             {
                 index: 4,
@@ -80,9 +87,13 @@ var vm = new Vue({
                 lodgingAndFoodIncl: "Yes",
                 accommodationType: "8 nights in hotels",
                 airfareIncl: "No",
-                activityLevel: "Easy, beaches and great food",
-                weather: "Partly Sunny, Windy",
-                avgTemp: "70 to 80 degrees Fahrenheit"
+                activityLevel: "easy, beaches and great food",
+                footwear: "sandals",
+                clothing: "lightweight clothing, swimwear, and a protective sun hat",
+                weather: "partly sunny and windy",
+                avgTemp: "70 to 80 degrees Fahrenheit",
+                leavingUSA: "outside of the USA",
+                additionalItems: "A passport will be required, and you will need medical documents, insurance cards and a copy of banking documents"
             },
         ]
     }

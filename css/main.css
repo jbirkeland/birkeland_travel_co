@@ -130,13 +130,43 @@ li {
     list-style-type: none;
 }
 
+.main-nav {
+    border: 1px solid black;
+}
+
 .destinations-container {
     border: 1px solid black;
     display: flex;
     justify-content: space-between;
 }
 
+.places-container {
+    border: 1px solid black;
+}
+
 .packing-form {
+    border: 1px solid black;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid black;
+    margin: auto;
+}
+
+td {
+    padding: 5px;
+}
+
+.packing-form-output {
+    text-align: left;
+}
+
+.itemForm {
+    border: 1px solid black;
+}
+
+.footer {
     border: 1px solid black;
 }
 
