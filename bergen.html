@@ -47,55 +47,57 @@
       </div>
     </header>
 
+    <section>
+      <div id="app" v-cloak>
+        <div class="places-container">
+          <h3>{{places[0].placeName}}</h3>
+          <p>{{places[0].tripDescription}}</p>
+          <ul>
+            <li>{{places[0].tripDuration}}</li>
+            <li>{{places[0].tripMonth}}</li>
+            <li>{{places[0].tripCost}}</li>
+            <li>{{places[0].lodgingAndFoodIncl}}</li>
+            <li>{{places[0].accommodationType}}</li>
+            <li>{{places[0].airfareIncl}}</li>
+            <li>{{places[0].activityLevel}}</li>
+          </ul>
+        </div>
 
-    <div id="app" v-cloak>
-      <div class="places-container">
-        <h3>{{places[0].placeName}}</h3>
-        <p>{{places[0].tripDescription}}</p>
-        <ul>
-          <li>{{places[0].tripDuration}}</li>
-          <li>{{places[0].tripMonth}}</li>
-          <li>{{places[0].tripCost}}</li>
-          <li>{{places[0].lodgingAndFoodIncl}}</li>
-          <li>{{places[0].accommodationType}}</li>
-          <li>{{places[0].airfareIncl}}</li>
-          <li>{{places[0].activityLevel}}</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Wondering what to pack on this adventure?</h3>
-        <p>Here are a list of items I would recommend!</p>
-        <table>
-          <thead>
-            <tr>
-              <th>Circumstance(s)</th>
-              <th>Item(s)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>This trip will be active in <strong>{{places[0].tripMonth}}</strong></td>
-              <td>Therefore, you should expect most days to be <strong>{{places[0].weather}}</strong></td>
-            </tr>
-            <tr>
-              <td>Due to this weather and these temperatures, <strong>{{places[0].avgTemp}}</strong></td>
-              <td>These items will be necessary <strong>{{places[0].clothing}}</strong></td>
-            </tr>
-            <tr>
-              <td>Because of the activity level: <strong>{{places[0].activityLevel}}</strong></td>
-              <td>I would recommend <strong>{{places[0].footwear}}</strong></td>
-            </tr>
-            <tr>
+        <div class="packing-list">
+          <h3>Wondering what to pack on this adventure?</h3>
+          <p>Here are a list of items I would recommend!</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Circumstance(s)</th>
+                <th>Item(s)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>This trip will be active in <strong>{{places[0].tripMonth}}</strong></td>
+                <td>Therefore, you should expect most days to be <strong>{{places[0].weather}}</strong></td>
+              </tr>
+              <tr>
+                <td>Due to this weather and these temperatures, <strong>{{places[0].avgTemp}}</strong></td>
+                <td>These items will be necessary <strong>{{places[0].clothing}}</strong></td>
+              </tr>
+              <tr>
+                <td>Because of the activity level: <strong>{{places[0].activityLevel}}</strong></td>
+                <td>I would recommend <strong>{{places[0].footwear}}</strong></td>
+              </tr>
+              <tr>
                 <td>Lastly, because this adventure is located <strong>{{places[0].leavingUSA}}</strong></td>
                 <td><strong>{{places[0].additionalItems}}</strong></td>
-            </tr>
-          </tbody>
-        </table>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <button type="submit">Print</button>
+        </div>
       </div>
-      <div>
-        <button type="submit">Print</button>
-      </div>
-    </div>
+    </section>
 
     <footer class="footer">
       <p>Social Media</p>

@@ -1,92 +1,122 @@
 <!doctype html>
 <html class="no-js" lang="">
 
-<head>
-  <meta charset="utf-8">
-  <title>Birkeland Travel Company</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <title>Birkeland Travel Company</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+    <meta name="theme-color" content="#fafafa">
+  </head>
 
-<body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
 
-  <!-- Add your site or application content here -->
+    <!-- Add your site or application content here -->
 
-  <header>
-    <h1>Birkeland Travel Company</h1>
-    <p>Adventures for All Seasons</p>
+    <header>
+      <h1>Birkeland Travel Company</h1>
+      <p>Adventures for All Seasons</p>
 
-    <h2>San Diego, California</h2>
-  
-    <div class="main-nav">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#!">About</a></li>
-          <li><a href="#!">Destinations</a></li>
+      <h2>San Diego, California</h2>
+    
+      <div class="main-nav">
+        <nav>
           <ul>
-            <li><a href="bergen.html">Bergen</a></li>
-            <li><a href="sandiego.html">San Diego</a></li>
-            <li><a href="tofte.html">Tofte</a></li>
-            <li><a href="mykonos.html">Mykonos</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#!">About</a></li>
+            <li><a href="#!">Destinations</a></li>
+            <ul>
+              <li><a href="bergen.html">Bergen</a></li>
+              <li><a href="sandiego.html">San Diego</a></li>
+              <li><a href="tofte.html">Tofte</a></li>
+              <li><a href="mykonos.html">Mykonos</a></li>
+            </ul>
+            <li><a href="#!">Contact</a></li>
           </ul>
-          <li><a href="#!">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section>
-    <h2>Destinations</h2>
-    <div id="app" v-cloak>
-      <div class="places-container">
-        <h3>{{places[1].placeName}}</h3>
-        <p>{{places[1].tripDescription}}</p>
-        <ul>
-          <li>{{places[1].tripDuration}}</li>
-          <li>{{places[1].tripMonth}}</li>
-          <li>{{places[1].tripCost}}</li>
-          <li>{{places[1].lodgingAndFoodIncl}}</li>
-          <li>{{places[1].accommodationType}}</li>
-          <li>{{places[1].airfareIncl}}</li>
-          <li>{{places[1].activityLevel}}</li>
-          <li>{{places[1].weather}}</li>
-          <li>{{places[1].avgTemp}}</li>
-        </ul>
+        </nav>
       </div>
-    </div>
-  </section>
+    </header>
+    
+    <section>
+      <div id="app" v-cloak>
+        <div class="places-container">
+          <h3>{{places[1].placeName}}</h3>
+          <p>{{places[1].tripDescription}}</p>
+          <ul>
+            <li>{{places[1].tripDuration}}</li>
+            <li>{{places[1].tripMonth}}</li>
+            <li>{{places[1].tripCost}}</li>
+            <li>{{places[1].lodgingAndFoodIncl}}</li>
+            <li>{{places[1].accommodationType}}</li>
+            <li>{{places[1].airfareIncl}}</li>
+            <li>{{places[1].activityLevel}}</li>
+          </ul>
+        </div>
 
-  <footer>
-    <p>Social Media</p>
-    <p>Copyright</p>
-  </footer>
+        <div class="packing-list">
+          <h3>Wondering what to pack on this adventure?</h3>
+          <p>Here are a list of items I would recommend!</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Circumstance(s)</th>
+                <th>Item(s)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>This trip will be active in <strong>{{places[1].tripMonth}}</strong></td>
+                <td>Therefore, you should expect most days to be <strong>{{places[1].weather}}</strong></td>
+              </tr>
+              <tr>
+                <td>Due to this weather and these temperatures, <strong>{{places[1].avgTemp}}</strong></td>
+                <td>These items will be necessary <strong>{{places[1].clothing}}</strong></td>
+              </tr>
+              <tr>
+                <td>Because of the activity level: <strong>{{places[1].activityLevel}}</strong></td>
+                <td>I would recommend <strong>{{places[1].footwear}}</strong></td>
+              </tr>
+              <tr>
+                <td>Lastly, because this adventure is located <strong>{{places[1].leavingUSA}}</strong></td>
+                <td><strong>{{places[1].additionalItems}}</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <button type="submit">Print</button>
+        </div>
+      </div>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <footer class="footer">
+      <p>Social Media</p>
+      <p>Copyright</p>
+    </footer>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  </body>
 </html>

@@ -132,6 +132,27 @@ li {
 
 .main-nav {
     border: 1px solid black;
+    position: relative;
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav li ul {
+    display: none;
+}
+
+.main-nav li:hover ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 1em;
+}
+
+.main-nav li li {
+    float: none;
 }
 
 .destinations-container {
