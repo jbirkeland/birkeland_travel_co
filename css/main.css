@@ -118,10 +118,12 @@ body {
     margin: auto;
     text-align: center;
     width: 1200px;
+    font-family: 'Raleway', sans-serif;
 }
 
 img {
-    width: 98%;
+    width: 100%;
+    padding: .25em;
     border-radius: 15px;
     border: 2px solid #bbb;
 }
@@ -130,9 +132,21 @@ li {
     list-style-type: none;
 }
 
+h1 {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 3em;
+}
+
+.main-header {
+    position: relative;
+    padding-top: 2em;
+}
+
 .main-nav {
     border: 1px solid black;
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .main-nav li {
@@ -156,10 +170,18 @@ li {
 }
 
 .destinations-container {
-    border: 1px solid black;
+    width: 800px;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
+.destination {
+    width: 50%;
+    padding: 1em;
+    
+}
+
 
 .places-container {
     border: 1px solid black;
@@ -189,6 +211,7 @@ td {
 
 .footer {
     border: 1px solid black;
+    clear: both;
 }
 
 
