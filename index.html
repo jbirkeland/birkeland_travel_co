@@ -1,148 +1,157 @@
 <!doctype html>
-<html class="no-js" lang="">
+  <html class="no-js" lang="">
 
-<head>
-  <meta charset="utf-8">
-  <title>Birkeland Travel Company</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <title>Birkeland Travel Company</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+    <meta name="theme-color" content="#fafafa">
+  </head>
 
-<body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
 
-  <!-- Add your site or application content here -->
-  <header class="main-header">
-    <h1 class="home-title">Birkeland Travel Company</h1>
-    <p class="home-tagline">Adventures for All Seasons</p>
+    <!-- Add your site or application content here -->
+    <header class="main-header">
+      <h1 class="home-title">Birkeland Travel Company</h1>
+      <h2 class="home-tagline">Adventures for All Seasons</h2>
 
-    <div id="app">
-      <p>Whether you're looking for spring wildflowers to rejuvenate your soul, exhilirating hikes to test your limits, a simple beach in a faraway land or a trek in the tundra during the peaceful winter months, Birkeland Travel Co. has you covered.</p>
-      <p>Currently, these are the four adventures we offer:</p>
-      <div class="home-places">
-        <ul>
-          <li v-for="items in places">{{items.placeName}} | {{items.tripDescription}}</li>
+      <div id="app">
+        <p class="home-description">Whether you're looking for spring wildflowers to rejuvenate your soul, exhilirating hikes to test your limits, a simple beach in a faraway land or a trek in the tundra during the peaceful winter months, Birkeland Travel Co. has you covered.</p>
+        <h3>Currently, these are the four adventures we offer:</h3>
+        <div class="home-places">
+          <ul>
+            <li v-for="items in places">{{items.placeName}} | {{items.tripDescription}}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main-nav">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#!">About</a></li>
+            <li><a href="#!">Destinations</a>
+              <ul>
+                <li><a href="bergen.html">Bergen</a></li>
+                <li><a href="sandiego.html">San Diego</a></li>
+                <li><a href="tofte.html">Tofte</a></li>
+                <li><a href="mykonos.html">Mykonos</a></li>
+              </ul>
+            </li>
+            <li><a href="#!">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <div class="destinations-container">
+        <div class="destination-box">
+          <div class="destination-box-square">
+            <div id="summer" class="destination-box-front">
+              <img src="img/bergen/1_500x500.jpg" alt="harbor in Bergen, Norway">
+            </div>
+            <div class="destination-box-back">
+              <div class="destination-box-back-content">
+                <h3><a href="bergen.html">Bergen, Norway</a></h3>
+                <p>Season | Summer</p>
+                <p>Best Activity | Mount Floyen</p>
+                <p>Testimonial | "We had an amazing time in Norway, the history and scenery were both terrific!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="destination-box">
+          <div class="destination-box-square">
+            <div id="spring" class="destination-box-front">
+              <img src="img/sandiego/1_500x500.jpg" alt="the Pacific Ocean in San Diego, CA">
+            </div>
+            <div class="destination-box-back">
+              <div class="destination-box-back-content">
+                <h3><a href="sandiego.html">San Diego, California</a></h3>
+                <p>Season | Spring</p>
+                <p>Best Hike | Ho Chi Minh Trail</p>
+                <p>Testimonial | "Birkeland Travel Co. took us off-the-beaten-path in a city we <i>thought</i> we knew"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="destination-box">
+          <div class="destination-box-square">
+            <div id="winter" class="destination-box-front">
+              <img src="img/tofte/1_500x500.jpg" alt="cross-country ski trails in Tofte, MN">
+            </div>
+            <div class="destination-box-back">
+              <div class="destination-box-back-content">
+                <h3><a href="tofte.html">Tofte, Minnesota</a></h3>
+                <p>Season | Winter</p>
+                <p>Best Skiing | Britton Peak</p>
+                <p>Testimonial | "It was so peaceful, we can't wait to go back next winter!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="destination-box">
+          <div class="destination-box-square">
+            <div id="fall" class="destination-box-front">
+              <img src="img/mykonos/1_500x500.jpg" alt="boats in Mykonos, Greece">
+            </div>
+            <div class="destination-box-back">
+              <div class="destination-box-back-content">
+                <h3><a href="mykonos.html">Mykonos, Greece</a></h3>
+                <p>Season | Fall</p>
+                <p>Best Beach | Fokos Beach</p>
+                <p>Testimonial | "The food, weather and culture were amazing! Thank you Birkeland Travel Co."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <h2>Birkeland Travel Company</h2>
+      <p>Adventures for All Seasons</p>
+      <div>
+        <ul class="social-media">
+          <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
         </ul>
       </div>
-    </div>
-
-    <div class="main-nav">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#!">About</a></li>
-          <li><a href="#!">Destinations</a>
-            <ul>
-              <li><a href="bergen.html">Bergen</a></li>
-              <li><a href="sandiego.html">San Diego</a></li>
-              <li><a href="tofte.html">Tofte</a></li>
-              <li><a href="mykonos.html">Mykonos</a></li>
-            </ul>
-          </li>
-          <li><a href="#!">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section>
-    <div class="destinations-container">
-      <div class="destination-box">
-        <div class="destination-box-square">
-          <div class="destination-box-front">
-            <a href="bergen.html"><img src="img/bergen/1_500x500.jpg" alt="harbor in Bergen, Norway"></a>
-          </div>
-          <div class="destination-box-back">
-            <div class="destination-box-back-content">
-              <h3>Bergen</h3>
-              <p>Welcome to fjord country</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="destination-box">
-        <div class="destination-box-square">
-          <div class="destination-box-front">
-            <a href="sandiego.html"><img src="img/sandiego/1_500x500.jpg" alt="the Pacific Ocean in San Diego, CA"></a>
-          </div>
-          <div class="destination-box-back">
-            <div class="destination-box-back-content">
-              <h3>San Diego</h3>
-              <p>You're going to love it here</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="destination-box">
-        <div class="destination-box-square">
-          <div class="destination-box-front">
-            <a href="tofte.html"><img src="img/tofte/1_500x500.jpg" alt="cross-country ski trails in Tofte, MN"></a>
-          </div>
-          <div class="destination-box-back">
-            <div class="destination-box-back-content">
-              <h3>Tofte</h3>
-              <p>Welcome to the North Shore</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="destination-box">
-        <div class="destination-box-square">
-          <div class="destination-box-front">
-            <a href="mykonos.html"><img src="img/mykonos/1_500x500.jpg" alt="boats in Mykonos, Greece"></a>
-          </div>
-          <div class="destination-box-back">
-            <div class="destination-box-back-content">
-              <h3>Mykonos</h3>
-              <p>Welcome to Greece</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <h2>Birkeland Travel Company</h2>
-    <p>Adventures for All Seasons</p>
-    <div>
-      <ul class="social-media">
-        <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
-      </ul>
-    </div>
-  </footer>
+    </footer>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-</body>
-
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  </body>
 </html>

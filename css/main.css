@@ -119,6 +119,7 @@ body {
     text-align: center;
     width: 800px;
     font-family: 'Raleway', sans-serif;
+    color: #444;
 }
 
 img {
@@ -135,11 +136,23 @@ li {
 h1 {
     font-family: 'Paytone One', sans-serif;
     font-size: 3.5em;
+    color: rgb(192, 125, 79);
+}
+
+h3 {
+    font-size: 1.5 em;
 }
 
 .main-header {
     position: relative;
     padding-top: 8em;
+}
+
+.travel-logo {
+    position: absolute;
+    font-family: 'Paytone One', sans-serif;
+    top: 0;
+    left: 0;
 }
 
 .home-title {
@@ -149,7 +162,15 @@ h1 {
 .home-tagline {
     font-size: 1.5em;
     margin: 0;
+    padding: 1em 1em 0;
+}
+
+.home-description {
+    font-style: italic;
     padding: 1em;
+    font-size: 1.25em;
+    border-top: 3px solid #bbb;
+    border-bottom: 3px solid #bbb;
 }
 
 .home-places ul {
@@ -171,6 +192,7 @@ h1 {
     font-size: 1.5em;
     margin: 0;
     padding: 0;
+    color: rgb(192, 125, 79);
 }
 
 .footer p {
@@ -250,6 +272,15 @@ h1 {
     flex-wrap: wrap;
 }
 
+.destinations-container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.destinations-container a:hover {
+    color: #000;
+}
+
 .destination-box {
     background-color: transparent;
     width: 50%;
@@ -280,8 +311,8 @@ h1 {
     position: absolute;
     top: 0;
     background-color: #bbb;
+    color: #fff;
     border-radius: 15px;
-    color: white;
     transform: rotateY(180deg);
 }
 
@@ -290,6 +321,34 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.winter {
+    width: 100%;
+    padding: .25em;
+    border-radius: 15px;
+    background-color: rgb(44, 9, 197);
+}
+
+.spring {
+    width: 100%;
+    padding: .25em;
+    border-radius: 15px;
+    background-color: rgb(11, 143, 66);
+}
+
+.summer {
+    width: 100%;
+    padding: .25em;
+    border-radius: 15px;
+    background-color: rgb(197, 9, 9);
+}
+
+.fall {
+    width: 100%;
+    padding: .25em;
+    border-radius: 15px;
+    background-color: rgb(226, 141, 43);
 }
 
 /*
@@ -356,22 +415,30 @@ th {
     border-left: 1px solid #bbb;
 }
 
-.print-button {
+.book-now-button, .print-button {
     background-color: #bbb;
     padding: .25em;
-    width: 4em;
+    width: 6em;
     margin: 2em auto;
     border-radius: 5px;
 }
 
-.print-button:hover {
+.book-now-button:hover , .print-button:hover {
     background-color: #000;
     color: #fff;
 }
 
-.print-button a {
+.book-now-button a, .print-button a {
     text-decoration: none;
     color: #fff;
+}
+
+.bookyes, .printsmile {
+    color: rgb(32, 100, 5);
+}
+
+#book h4, #print h4 {
+    font-size: 1em;
 }
 
  /* ==========================================================================

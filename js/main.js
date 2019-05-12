@@ -41,7 +41,7 @@ var vm = new Vue({
             {
                 index: 3,
                 placeName: "Tofte, Minnesota",
-                tripDescription: "Nothing but Nature on the North Shore",
+                tripDescription: "Surviving Winter: Nothing but Nature on the North Shore",
                 tripDuration: "5 days",
                 tripMonth: "December and January",
                 tripCost: "$500",
@@ -59,7 +59,7 @@ var vm = new Vue({
             {
                 index: 4,
                 placeName: "Mykonos, Greece",
-                tripDescription: "Relaxing in the Magnificent Mediterranean",
+                tripDescription: "Relaxing on the Magnificent Mediterranean",
                 tripDuration: "10 days",
                 tripMonth: "September and October",
                 tripCost: "$7,000",
@@ -76,4 +76,28 @@ var vm = new Vue({
             },
         ]
     }
+});
+
+var bookNow = document.getElementById("book");
+
+var printNow = document.getElementById("print");
+
+bookNow.addEventListener('click', function(){
+    var bookParaTag = document.createElement("h4");
+    bookNow.appendChild(bookParaTag);
+
+    var bookParaMessage = document.createTextNode("Woo Hoo!! You're going to have an amazing trip!");
+    bookParaTag.appendChild(bookParaMessage);
+
+    bookParaTag.classList.add("bookyes");
+});
+
+printNow.addEventListener('click', function(){
+    var printParaTag = document.createElement("h4");
+    printNow.appendChild(printParaTag);
+
+    var printParaMessage = document.createTextNode("Don't forget to pack a smile! If you forget it, we'll have one for you when you arrive!");
+    printParaTag.appendChild(printParaMessage);
+
+    printParaTag.classList.add("printsmile");
 });
