@@ -134,7 +134,7 @@ li {
 
 h1 {
     font-family: 'Paytone One', sans-serif;
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 .main-header {
@@ -142,15 +142,55 @@ h1 {
     padding-top: 8em;
 }
 
+.home-title {
+    margin-bottom: 0;
+}
+
+.home-tagline {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 1em;
+}
+
 .footer {
-    border: 1px solid black;
     clear: both;
     margin-top: 3em;
+    position: relative;
 }
 
 .footer h2 {
     font-family: 'Paytone One', sans-serif;
     font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.social-media {
+    position: absolute;
+    top: 90%;
+    left: 40%;
+}
+
+.social-media li {
+    display: inline-block;
+    padding: .5em;
+}
+
+.social-media a {
+    color: #bbb;
+}
+
+.social-media a:hover {
+    color: #000;
+}
+
+.social-media i {
+    font-size: 2em;
 }
 
 /*
