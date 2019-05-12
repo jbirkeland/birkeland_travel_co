@@ -1,3 +1,7 @@
+/*
+    This JavaScript is for the places array describing each trip
+*/
+
 var vm = new Vue({
     el: "#app",
     data: {
@@ -78,9 +82,11 @@ var vm = new Vue({
     }
 });
 
-var bookNow = document.getElementById("book");
+/*
+    This JavaScript is for the book now button on the destination pages
+*/
 
-var printNow = document.getElementById("print");
+var bookNow = document.getElementById("book");
 
 bookNow.addEventListener('click', function(){
     var bookParaTag = document.createElement("h4");
@@ -91,6 +97,12 @@ bookNow.addEventListener('click', function(){
 
     bookParaTag.classList.add("bookyes");
 });
+
+/*
+    This JavaScript is for the print button on the destination pages packing list
+*/
+
+var printNow = document.getElementById("print");
 
 printNow.addEventListener('click', function(){
     var printParaTag = document.createElement("h4");
