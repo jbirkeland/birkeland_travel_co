@@ -57,7 +57,7 @@ var vm = new Vue({
                 weather: "sunny",
                 avgTemp: "65 to 75 degrees Fahrenheit",
                 leavingUSA: "within the USA",
-                additionalItems: "There shouldn't need additional items"
+                additionalItems: "You shouldn't need additional items"
             },
             {
                 index: 3,
@@ -75,7 +75,7 @@ var vm = new Vue({
                 weather: "partly cloudy and snowy",
                 avgTemp: "-15 to 15 degrees Fahrenheit",
                 leavingUSA: "within the USA",
-                additionalItems: "There shouldn't need additional items"
+                additionalItems: "You shouldn't need additional items"
             },
             {
                 index: 4,

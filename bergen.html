@@ -47,10 +47,17 @@
       </div>
     </header>
 
+    <div class="destination-gallery">
+        <div class="gallery-image"><img src="img/bergen/2_500x500.jpg" alt="lake on Mount Floyen"></div>
+        <div class="gallery-image"><img src="img/bergen/3_500x500.jpg" alt="overlooking the city of Bergen"></div>
+        <div class="gallery-image"><img src="img/bergen/4_500x500.jpg" alt="mountains to the east of Bergen"></div>
+        <div class="gallery-image"><img src="img/bergen/5_500x500.jpg" alt="rainy day in Bergen"></div>
+    </div>
+
     <section>
       <div id="app" v-cloak>
         <div class="places-container">
-          <h3>{{places[0].placeName}}</h3>
+          <h3>Trip Details</h3>
           <p>{{places[0].tripDescription}}</p>
           <ul>
             <li>{{places[0].tripDuration}}</li>
@@ -75,26 +82,27 @@
             </thead>
             <tbody>
               <tr>
-                <td>This trip will be active in <strong>{{places[0].tripMonth}}</strong></td>
-                <td>Therefore, you should expect most days to be <strong>{{places[0].weather}}</strong></td>
+                <td>This trip will be active in {{places[0].tripMonth}}</td>
+                <td>Therefore, you should expect most days to be {{places[0].weather}}</td>
               </tr>
               <tr>
-                <td>Due to this weather and these temperatures, <strong>{{places[0].avgTemp}}</strong></td>
-                <td>These items will be necessary <strong>{{places[0].clothing}}</strong></td>
+                <td>Due to this weather and these temperatures, {{places[0].avgTemp}}</td>
+                <td>These items will be necessary {{places[0].clothing}}</td>
               </tr>
               <tr>
-                <td>Because of the activity level: <strong>{{places[0].activityLevel}}</strong></td>
-                <td>I would recommend <strong>{{places[0].footwear}}</strong></td>
+                <td>Because of the activity level: {{places[0].activityLevel}}</td>
+                <td>I would recommend {{places[0].footwear}}</td>
               </tr>
               <tr>
-                <td>Lastly, because this adventure is located <strong>{{places[0].leavingUSA}}</strong></td>
-                <td><strong>{{places[0].additionalItems}}</strong></td>
+                <td>Lastly, because this adventure is located {{places[0].leavingUSA}}</td>
+                <td>{{places[0].additionalItems}}</td>
               </tr>
             </tbody>
           </table>
         </div>
+        
         <div>
-          <button type="submit">Print</button>
+          <p class="print-button"><a href="#!">Print</a></p>
         </div>
       </div>
     </section>

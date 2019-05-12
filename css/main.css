@@ -288,6 +288,16 @@ h1 {
     This begins the section regarding the places styling on the destination pages
 */
 
+.destination-gallery {
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery-image {
+    width: 100%;
+    padding: .25em;
+}
+
 .places-container {
     border: 1px solid black;
 }
@@ -304,6 +314,24 @@ table, th, td {
 
 td {
     padding: 5px;
+}
+
+.print-button {
+    background-color: #bbb;
+    padding: .25em;
+    width: 4em;
+    margin: 1em auto;
+    border-radius: 5px;
+}
+
+.print-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.print-button a {
+    text-decoration: none;
+    color: #fff;
 }
 
  /* ==========================================================================

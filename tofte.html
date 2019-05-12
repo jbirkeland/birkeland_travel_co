@@ -47,10 +47,17 @@
       </div>
     </header>
     
+    <div class="destination-gallery">
+      <div class="gallery-image"><img src="img/tofte/2_500x500.jpg" alt="frozen Temperance River"></div>
+      <div class="gallery-image"><img src="img/tofte/3_500x500.jpg" alt="snow-covered pine trees"></div>
+      <div class="gallery-image"><img src="img/tofte/4_500x500.jpg" alt="snowy view of Lake Superior"></div>
+      <div class="gallery-image"><img src="img/tofte/5_500x500.jpg" alt="trail to Lake Superior beach"></div>
+    </div>
+
     <section>
       <div id="app" v-cloak>
         <div class="places-container">
-          <h3>{{places[2].placeName}}</h3>
+          <h3>Trip Details</h3>
           <p>{{places[2].tripDescription}}</p>
           <ul>
             <li>{{places[2].tripDuration}}</li>
@@ -75,26 +82,27 @@
             </thead>
             <tbody>
               <tr>
-                <td>This trip will be active in <strong>{{places[2].tripMonth}}</strong></td>
-                <td>Therefore, you should expect most days to be <strong>{{places[2].weather}}</strong></td>
+                <td>This trip will be active in {{places[2].tripMonth}}</td>
+                <td>Therefore, you should expect most days to be {{places[2].weather}}</td>
               </tr>
               <tr>
-                <td>Due to this weather and these temperatures, <strong>{{places[2].avgTemp}}</strong></td>
-                <td>These items will be necessary <strong>{{places[2].clothing}}</strong></td>
+                <td>Due to this weather and these temperatures, {{places[2].avgTemp}}</td>
+                <td>These items will be necessary {{places[2].clothing}}</td>
               </tr>
               <tr>
-                <td>Because of the activity level: <strong>{{places[2].activityLevel}}</strong></td>
-                <td>I would recommend <strong>{{places[2].footwear}}</strong></td>
+                <td>Because of the activity level: {{places[2].activityLevel}}</td>
+                <td>I would recommend {{places[2].footwear}}</td>
               </tr>
               <tr>
-                <td>Lastly, because this adventure is located <strong>{{places[2].leavingUSA}}</strong></td>
-                <td><strong>{{places[2].additionalItems}}</strong></td>
+                <td>Lastly, because this adventure is located {{places[2].leavingUSA}}</td>
+                <td>{{places[2].additionalItems}}</td>
               </tr>
             </tbody>
           </table>
         </div>
+        
         <div>
-          <button type="submit">Print</button>
+          <p class="print-button"><a href="#!">Print</a></p>
         </div>
       </div>
     </section>
