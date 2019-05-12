@@ -1,24 +1,3 @@
-//Vue.component('places-component', {
-    //props: ['placeName', 'tripDescription','tripDuration','tripMonth','tripCost','lodgingAndFoodIncl','accommodationType','airfareIncl','activityLevel','weather','avgTemp'],
-    //template: `
-    //<div class="places-container">
-        //<h3>{{placeName}}</h3>
-        //<p>{{tripDescription}}</p>
-        //<ul>
-          //<li>{{tripDuration}}</li>
-          //<li>{{tripMonth}}</li>
-          //<li>{{tripCost}}</li>
-          //<li>{{lodgingAndFoodIncl}}</li>
-          //<li>{{accommodationType}}</li>
-          //<li>{{airfareIncl}}</li>
-          //<li>{{activityLevel}}</li>
-          //<li>{{weather}}</li>
-          //<li>{{avgTemp}}</li>
-        //</ul>
-      //</div>
-    //</div>`
-//});
-
 var vm = new Vue({
     el: "#app",
     data: {
@@ -33,7 +12,7 @@ var vm = new Vue({
                 lodgingAndFoodIncl: "Yes",
                 accommodationType: "4 nights in hotels, 4 nights camping",
                 airfareIncl: "No",
-                activityLevel: "moderate, some hiking involved",
+                activityLevel: "Moderate, some hiking involved",
                 footwear: "adequate shoes with good support",
                 clothing: "rain gear, warm clothes, wool socks, quick-dry clothing",
                 weather: "partly cloudy and rainy",
@@ -52,7 +31,7 @@ var vm = new Vue({
                 accommodationType: "3 nights in hotels",
                 airfareIncl: "Yes",
                 activityLevel: "moderate, several long walks per day",
-                footwear: "adequate shoes with good support and sandals",
+                footwear: "Adequate shoes with good support and sandals",
                 clothing: "lightweight clothing, light jacket and shorts",
                 weather: "sunny",
                 avgTemp: "65 to 75 degrees Fahrenheit",
@@ -69,7 +48,7 @@ var vm = new Vue({
                 lodgingAndFoodIncl: "Yes",
                 accommodationType: "4 nights hotel",
                 airfareIncl: "No",
-                activityLevel: "difficult, several long hikes per day",
+                activityLevel: "Difficult, several long hikes per day",
                 footwear: "winter boots required",
                 clothing: "very warm clothing, thermal base layers, wool socks, hat and gloves",
                 weather: "partly cloudy and snowy",
@@ -87,7 +66,7 @@ var vm = new Vue({
                 lodgingAndFoodIncl: "Yes",
                 accommodationType: "8 nights in hotels",
                 airfareIncl: "No",
-                activityLevel: "easy, beaches and great food",
+                activityLevel: "Easy, beaches and great food",
                 footwear: "sandals",
                 clothing: "lightweight clothing, swimwear, and a protective sun hat",
                 weather: "partly sunny and windy",

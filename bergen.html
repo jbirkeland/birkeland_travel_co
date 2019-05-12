@@ -12,6 +12,7 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -57,16 +58,15 @@
     <section>
       <div id="app" v-cloak>
         <div class="places-container">
-          <h3>Trip Details</h3>
-          <p>{{places[0].tripDescription}}</p>
+          <h3>{{places[0].tripDescription}}</h3>
           <ul>
-            <li>{{places[0].tripDuration}}</li>
-            <li>{{places[0].tripMonth}}</li>
-            <li>{{places[0].tripCost}}</li>
-            <li>{{places[0].lodgingAndFoodIncl}}</li>
-            <li>{{places[0].accommodationType}}</li>
-            <li>{{places[0].airfareIncl}}</li>
-            <li>{{places[0].activityLevel}}</li>
+            <li>Trip Duration: {{places[0].tripDuration}}</li>
+            <li>Trip Month: {{places[0].tripMonth}}</li>
+            <li>Trip Cost: {{places[0].tripCost}}</li>
+            <li>Activity Level: {{places[0].activityLevel}}</li>
+            <li>Lodging and Food Included: {{places[0].lodgingAndFoodIncl}}</li>
+            <li>Accommodation Type: {{places[0].accommodationType}}</li>
+            <li>Airfare Included: {{places[0].airfareIncl}}</li>
           </ul>
         </div>
 
@@ -76,31 +76,31 @@
           <table>
             <thead>
               <tr>
-                <th>Circumstance(s)</th>
-                <th>Item(s)</th>
+                <th class="table-heading-1">Circumstance(s)</th>
+                <th class="table-heading-2">Item(s)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>This trip will be active in {{places[0].tripMonth}}</td>
-                <td>Therefore, you should expect most days to be {{places[0].weather}}</td>
+                <td class="table-column-1">This trip will be active in {{places[0].tripMonth}}</td>
+                <td class="table-column-2">Therefore, you should expect most days to be {{places[0].weather}}</td>
               </tr>
               <tr>
-                <td>Due to this weather and these temperatures, {{places[0].avgTemp}}</td>
-                <td>These items will be necessary {{places[0].clothing}}</td>
+                <td class="table-column-1">Due to this weather and these temperatures, {{places[0].avgTemp}}</td>
+                <td class="table-column-2">These items will be necessary {{places[0].clothing}}</td>
               </tr>
               <tr>
-                <td>Because of the activity level: {{places[0].activityLevel}}</td>
-                <td>I would recommend {{places[0].footwear}}</td>
+                <td class="table-column-1">Because of the activity level: {{places[0].activityLevel}}</td>
+                <td class="table-column-2">I would recommend {{places[0].footwear}}</td>
               </tr>
               <tr>
-                <td>Lastly, because this adventure is located {{places[0].leavingUSA}}</td>
-                <td>{{places[0].additionalItems}}</td>
+                <td class="table-column-1">Lastly, because this adventure is located {{places[0].leavingUSA}}</td>
+                <td class="table-column-2">{{places[0].additionalItems}}</td>
               </tr>
             </tbody>
           </table>
         </div>
-        
+
         <div>
           <p class="print-button"><a href="#!">Print</a></p>
         </div>

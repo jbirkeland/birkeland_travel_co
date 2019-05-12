@@ -298,29 +298,52 @@ h1 {
     padding: .25em;
 }
 
-.places-container {
-    border: 1px solid black;
+.places-container h3 {
+    font-weight: bolder;
 }
 
-.packing-form {
-    border: 1px solid black;
-    text-align: left;
+.packing-list {
+    border-top: 3px solid #bbb;
+}
+
+.packing-list h3 {
+    margin-top: 2em;
+}
+
+table {
+    padding-top: 1em;
 }
 
 table, th, td {
-    border: 1px solid black;
     margin: auto;
+    text-align: left;
 }
 
 td {
     padding: 5px;
 }
 
+th {
+    text-align: center;
+}
+
+.table-column-1, .table-column-2 {
+    border-top: 1px solid #bbb;
+}
+
+.table-heading-2 {
+    border-left: 1px solid #bbb;
+}
+
+.table-column-2 {
+    border-left: 1px solid #bbb;
+}
+
 .print-button {
     background-color: #bbb;
     padding: .25em;
     width: 4em;
-    margin: 1em auto;
+    margin: 2em auto;
     border-radius: 5px;
 }
 
