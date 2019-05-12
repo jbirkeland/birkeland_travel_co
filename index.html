@@ -29,6 +29,16 @@
     <h1 class="home-title">Birkeland Travel Company</h1>
     <p class="home-tagline">Adventures for All Seasons</p>
 
+    <div id="app">
+      <p>Whether you're looking for spring wildflowers to rejuvenate your soul, exhilirating hikes to test your limits, a simple beach in a faraway land or a trek in the tundra during the peaceful winter months, Birkeland Travel Co. has you covered.</p>
+      <p>Currently, these are the four adventures we offer:</p>
+      <div class="home-places">
+        <ul>
+          <li v-for="items in places">{{items.placeName}} | {{items.tripDescription}}</li>
+        </ul>
+      </div>
+    </div>
+
     <div class="main-nav">
       <nav>
         <ul>

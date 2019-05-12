@@ -152,6 +152,14 @@ h1 {
     padding: 1em;
 }
 
+.home-places ul {
+    padding: 0;
+}
+
+.home-places li {
+    padding: .35em;
+}
+
 .footer {
     clear: both;
     margin-top: 3em;
@@ -298,8 +306,17 @@ h1 {
     padding: .25em;
 }
 
+.places-container {
+    margin-bottom: 2em;
+}
+
 .places-container h3 {
     font-weight: bolder;
+}
+
+.places-container ul {
+    text-align: center;
+    padding: 0;
 }
 
 .packing-list {
