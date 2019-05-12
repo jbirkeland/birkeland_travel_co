@@ -169,6 +169,14 @@ h1 {
     float: none;
 }
 
+.footer {
+    border: 1px solid black;
+    clear: both;
+}
+
+/*
+    This begins the section regarding the destination box styling
+*/
 .destinations-container {
     width: 800px;
     margin: auto;
@@ -176,12 +184,51 @@ h1 {
     flex-wrap: wrap;
 }
 
-.destination {
+.destination-box {
+    background-color: transparent;
     width: 50%;
+    perspective: 1000px;
     padding: 1em;
-    
 }
 
+.destination-box-square {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.destination-box:hover .destination-box-square {
+    transform: rotateY(180deg);
+}
+
+.destination-box-front, .destination-box-back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.destination-box-back {
+    position: absolute;
+    top: 0;
+    background-color: #bbb;
+    border-radius: 15px;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.destination-box-back-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*
+    This begins the section regarding the places styling on the destination pages
+*/
 
 .places-container {
     border: 1px solid black;
@@ -200,29 +247,6 @@ table, th, td {
 td {
     padding: 5px;
 }
-
-.packing-form-output {
-    text-align: left;
-}
-
-.itemForm {
-    border: 1px solid black;
-}
-
-.footer {
-    border: 1px solid black;
-    clear: both;
-}
-
-
-
-
-
-
-
-
-
-
 
  /* ==========================================================================
    Helper classes
